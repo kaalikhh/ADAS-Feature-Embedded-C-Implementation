@@ -303,7 +303,7 @@ uint8_t read_Dis(){
   ADCSRA|=(1<<ADSC);
   while(ADCSRA & (1<<ADSC));
   read_PotenValue=ADC;
-  temp=ceil(ADC*100/1023);
+  temp=ceil(read_PotenValue*100/1023);
   dis=(uint8_t)(temp);
 
   return dis;
