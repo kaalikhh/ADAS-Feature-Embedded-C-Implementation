@@ -240,7 +240,7 @@ void cruise_Ctrl(){
             temp=abs(ceil((temp2-dis)*2/(temp1*temp1)));
             acclr=(int8_t)(temp);
         }
-        else if(fv_Spd<ego_Spd){
+        else{
              temp1=(fv_Spd-ego_Spd);
              temp2=(set_Dis-dis);
              temp=floor(temp1*temp1/(2*temp2));
