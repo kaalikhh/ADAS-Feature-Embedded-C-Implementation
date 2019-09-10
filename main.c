@@ -537,7 +537,7 @@ else{
 
 void acc_system(void)
 {
-    uint8_t itr=0;
+    // uint8_t itr=0;
     pwmSetup_Func();
     main_Setup_Func();
     ADC_Setup_Func();
